@@ -1,4 +1,4 @@
-const API_BASE = '/api';
+const API_BASE = import.meta.env.VITE_API_URL || '/api';
 
 // Helper for HTTP requests
 const request = async (endpoint, options = {}) => {
